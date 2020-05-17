@@ -1,0 +1,82 @@
+header {
+  height: 5vh;
+}
+
+main {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.select {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.game {
+  font-size: 1.2rem;
+  font-family: lobster;
+  color: #333;
+  text-align: center;
+  /*box model*/
+  background-color: #333;
+  border-radius: 50;
+  padding: 3rem;
+  margin: 1rem;
+  border-radius: 2rem;
+  /*flex props*/
+  flex: 1 0 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /**/
+  transition: height 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0%;
+}
+
+.game h1 {
+  flex: 2;
+}
+
+.game h6 {
+  flex: 1;
+}
+
+.game button {
+  outline: none;
+  cursor: pointer;
+
+  text-transform: capitalize;
+  font-family: roboto;
+  font-size: 2.5rem;
+  color: snow;
+
+  border: none;
+  padding: 0.25rem 1rem;
+  margin: 1.5rem 0.5rem 0;
+  background: transparent;
+
+  transition: all 0.25s ease-in-out;
+  flex: 1;
+}
+
+.game button:hover {
+  color: #333;
+}
+
+.deep {
+  background-color: indianred;
+}
+
+.never-have-i-ever {
+  background-color: #f8c832;
+}
+
+.most-likely {
+  background-color: #83da65;
+}

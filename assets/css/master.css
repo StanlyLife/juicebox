@@ -1,5 +1,31 @@
+/*
+font-family: 'Lobster', cursive;
+font-family: 'Roboto', sans-serif;
+
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+header {
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  margin: 0.5vh 1vw;
+}
+
+header h1 {
+  font-family: Lobster;
+}
+
+header img {
+  height: 90%;
+  max-width: 90%;
+}
+
+main {
+  min-height: 94vh;
 }

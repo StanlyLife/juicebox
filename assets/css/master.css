@@ -11,21 +11,27 @@ font-family: 'Roboto', sans-serif;
 }
 
 header {
-  height: 5vh;
+  /* background-color: #999; */
+  height: 6vh;
   display: flex;
   flex-direction: row;
-  margin: 0.5vh 1vw;
+  padding: 0vh 1vw;
+  overflow: hidden;
+  border-radius: 0px 0px 25px 25px;
 }
 
 header h1 {
+  margin: 0.1rem;
   font-family: Lobster;
+  font-size: 3.75vh;
 }
 
 header img {
+  margin: 0.1rem;
   height: 90%;
   max-width: 90%;
 }
 
 main {
-  min-height: 94vh;
+  min-height: 93vh;
 }

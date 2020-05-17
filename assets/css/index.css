@@ -10,6 +10,14 @@ main {
   align-content: center;
 }
 
+main .hero {
+  margin: 0 5vh 12vh 5vh;
+
+  text-align: center;
+  font-family: roboto;
+  font-size: 1.25rem;
+}
+
 .select {
   display: flex;
   flex-direction: row;
@@ -45,6 +53,8 @@ main {
 
 .game h6 {
   flex: 1;
+  font-family: roboto;
+  color: #555;
 }
 
 .game button {

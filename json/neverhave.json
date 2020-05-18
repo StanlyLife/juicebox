@@ -1,0 +1,602 @@
+{
+  "1": {
+    "question": "had an STI",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "2": {
+    "question": "been arrested",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "3": {
+    "question": "cheated on an SO/ an exam",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "4": {
+    "question": "walked in on my parents",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "5": {
+    "question": "faked an orgasm",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "6": {
+    "question": "had more than one sexual partner in 24 hours",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "7": {
+    "question": "been fired from a job",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "8": {
+    "question": "had unprotected sex",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "9": {
+    "question": "had a sex dream about someone in the room",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "10": {
+    "question": "read my SO's private message history",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "11": {
+    "question": "shat my pants",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "12": {
+    "question": "saw someone naked and no longer wanted to have sex with them",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "13": {
+    "question": "filmed myself having sex",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "14": {
+    "question": "had a fetish",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "15": {
+    "question": "cried while masturbating",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "16": {
+    "question": "burned a book",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "17": {
+    "question": "gone a week without having a bath/shower",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "18": {
+    "question": "slept with a soft toy as an adult",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "19": {
+    "question": "failed an exam",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "20": {
+    "question": "been drunk before 4pm",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "21": {
+    "question": "sent a sext to the wrong person",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "22": {
+    "question": "had a threesome",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "23": {
+    "question": "drunk texted an ex",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "24": {
+    "question": "lied about my age to a sexual partner",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "25": {
+    "question": "put metal in the microwave",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "26": {
+    "question": "watched a porno the entire way through",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "27": {
+    "question": "dyed my hair",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "28": {
+    "question": "had gay thoughts",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "29": {
+    "question": "been broken up with",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "30": {
+    "question": "taken it up the butt",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "31": {
+    "question": "shoplifted",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "32": {
+    "question": "gone surfing",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "33": {
+    "question": "gotten stitches",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "34": {
+    "question": "gone vegan",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "35": {
+    "question": "shot a gun",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "36": {
+    "question": "dined and dashed",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "37": {
+    "question": "ruined someone else’s vacation",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "38": {
+    "question": "been caught cheating on a test",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "39": {
+    "question": "had a paranormal experience",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "40": {
+    "question": "had something traumatic happen to me",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "41": {
+    "question": "seen a traumatic incident with my own eyes",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "42": {
+    "question": "walked for more than eight hours straight",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "43": {
+    "question": "thought I was going to drown",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "44": {
+    "question": "fallen in love at first sight",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "45": {
+    "question": "been on TV or the radio",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "46": {
+    "question": "been awake for two days straight",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "47": {
+    "question": "accidentally sent someone to the hospital",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "48": {
+    "question": "had to run to save my life",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "49": {
+    "question": "accidentally said “I love you” to someone",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "50": {
+    "question": "been bullied",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "51": {
+    "question": "almost died",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "52": {
+    "question": "lost alot of money",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "53": {
+    "question": "had a crush on a friend’s parent",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "54": {
+    "question": "eaten animal foot",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "55": {
+    "question": "eaten something off the ground",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "56": {
+    "question": "cried in public",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "57": {
+    "question": "been screamed at by a customer at my job",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "58": {
+    "question": "Most likely to embarrass themselves in front of their crush",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "59": {
+    "question": "taken food out of a trash can and eaten it",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "60": {
+    "question": "driven drunk",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "61": {
+    "question": "experimented to see my sexual orientation",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "62": {
+    "question": "said ‘I love you’ just to get laid",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "63": {
+    "question": "spied on my neighbors",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "64": {
+    "question": "failed my driving test",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "65": {
+    "question": "failed a math test",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "66": {
+    "question": "doubted in my heterosexuality",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "67": {
+    "question": "watched keeping up with the Kardashians",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "68": {
+    "question": "seen a celebirty",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "69": {
+    "question": "Stole something with a higher value than $100",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "70": {
+    "question": "stalked an ex’s boyfriend or girl/boyfriend on social media",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "71": {
+    "question": "had an open relationship",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "72": {
+    "question": "Lied in this game",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "73": {
+    "question": "Said an “I love you” without feeling it",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "74": {
+    "question": "Been kicked out of a bar",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "75": {
+    "question": "sent pictures in underwear",
+    "level": 3,
+    "category": "neverhave"
+  },
+  "76": {
+    "question": "sent nudes",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "77": {
+    "question": "Been unfaithful",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "78": {
+    "question": "had a onenightstand",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "79": {
+    "question": "Kissed someone of the same gender",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "80": {
+    "question": "Woken up drunk the next day",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "81": {
+    "question": "Kissed my best friend",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "82": {
+    "question": "smoked weed",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "83": {
+    "question": "done drugs stronger than weed",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "84": {
+    "question": "been in this room, CHEERS!",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "85": {
+    "question": "Been with the former love of my best friend",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "86": {
+    "question": "Most likely to kill a cheating partner",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "87": {
+    "question": "had a friend with benefits",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "88": {
+    "question": "Fought in the street",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "89": {
+    "question": "Been robbed",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "90": {
+    "question": "Made love with someone from the same school",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "91": {
+    "question": "Illegally taken something across the border",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "92": {
+    "question": "Been in handcuffs",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "93": {
+    "question": "been busted for looking at porn",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "94": {
+    "question": "wanted to become a porn star",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "95": {
+    "question": "made a sexist comment",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "96": {
+    "question": "Cried At A Pixar Movie",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "97": {
+    "question": "Had A Fake ID",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "98": {
+    "question": "Re-Gifted Something That Was Gifted To Me",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "99": {
+    "question": "scored with my friend’s mom/dad",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "100": {
+    "question": "Dropped My Phone In The Toilet",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "101": {
+    "question": "had a gay or lesbian experience",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "102": {
+    "question": "Chugged A Beer In Less Than 10 Seconds",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "103": {
+    "question": "Gotten A Tattoo I Regret",
+    "level": 2,
+    "category": "neverhave"
+  },
+  "104": {
+    "question": "Given Or Received A Lap Dance",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "105": {
+    "question": "bought a sex toy and used it on somebody",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "106": {
+    "question": "been or have pegged",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "107": {
+    "question": "recieved a bukkake",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "108": {
+    "question": "swallowed",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "109": {
+    "question": "been at a strip club",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "110": {
+    "question": "Played Strip Poker",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "111": {
+    "question": "Had Sex In A Public Place",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "112": {
+    "question": "been secretly crushing on someone else in the room right now? And who?",
+    "level": 5,
+    "category": "neverhave"
+  },
+  "113": {
+    "question": "Gone On A “Bad” Blind Date",
+    "level": 2,
+    "category": "neverhave"
+  },
+  "114": {
+    "question": "scored with a DILF/MILF",
+    "level": 2,
+    "category": "neverhave"
+  },
+  "115": {
+    "question": "Used A Dumb Pick Up Line",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "116": {
+    "question": "Given A Stranger A Fake Phone Number",
+    "level": 3,
+    "category": "neverhave"
+  },
+  "117": {
+    "question": "Tried To Make Someone Jealous",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "118": {
+    "question": "Lied To Get Out Of Going To Work",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "119": {
+    "question": "Believed My Toys Had Feelings",
+    "level": 1,
+    "category": "neverhave"
+  },
+  "120": {
+    "question": "Bragged About Something I Have Not Done",
+    "level": 1,
+    "category": "neverhave"
+  }
+}

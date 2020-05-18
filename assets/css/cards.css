@@ -23,7 +23,6 @@
 }
 
 .arrows {
-  border: 2px solid lawngreen;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -61,33 +60,62 @@
   /* transform: rotate(180deg); */
 }
 
-.card.animateOut {
-  animation-duration: 0.75s;
-  animation-name: slideOut;
+.card {
+  animation-duration: 0.5s;
   animation-iteration-count: 1;
 }
-
-.card.animateIn {
-  animation-duration: 0.75s;
-  animation-name: slideIn;
-  animation-iteration-count: 1;
+.card.nextOut {
+  animation-name: nextOut;
+}
+.card.nextIn {
+  animation-name: nextIn;
 }
 
-@keyframes slideOut {
+.card.previousIn {
+  animation-name: previousIn;
+}
+.card.previousOut {
+  animation-name: previousOut;
+}
+
+@keyframes nextOut {
   from {
     transform: translate(0vw);
+    opacity: 100%;
   }
 
   to {
+    opacity: 0%;
     transform: translate(-100vw);
   }
 }
-@keyframes slideIn {
+@keyframes nextIn {
   from {
     transform: translate(100vw);
     opacity: 0%;
   }
 
+  to {
+    transform: translate(0vw);
+    opacity: 100%;
+  }
+}
+
+@keyframes previousOut {
+  from {
+    transform: translate(0vw);
+    opacity: 100%;
+  }
+  to {
+    transform: translate(100vw);
+    opacity: 0%;
+  }
+}
+@keyframes previousIn {
+  from {
+    transform: translate(-100vw);
+    opacity: 0%;
+  }
   to {
     transform: translate(0vw);
     opacity: 100%;

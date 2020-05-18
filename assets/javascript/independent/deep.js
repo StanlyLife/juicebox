@@ -1,4 +1,4 @@
 const category = "deep";
-const url = "./json/Juice.json";
+const url = "./json/deep.json";
 
 Start();

@@ -66,12 +66,6 @@ function DeckToLocalStorage(deck, category) {
   console.log(JSON.parse(myStorage[category]).length);
   return JSON.stringify(jsonDeck);
 }
-/* Check if localstorage is empty */
-// function CheckLocalStorage(category) {
-//   if (window.localStorage[category] === undefined) {
-//     console.log("empty");
-//   }
-// }
 
 class Stack {
   constructor() {
@@ -88,7 +82,6 @@ class Stack {
   }
 
   peek() {
-    console.log(this.items[this.items.length - 1]);
     return this.items[this.items.length - 1];
   }
 
@@ -107,3 +100,4 @@ class Stack {
     }
   }
 }
+let oldCards = new Stack();

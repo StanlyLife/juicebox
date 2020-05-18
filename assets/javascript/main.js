@@ -89,7 +89,7 @@ class Stack {
 
   peek() {
     console.log(this.items[this.items.length - 1]);
-    return this.items[this.items.length];
+    return this.items[this.items.length - 1];
   }
 
   isEmpty() {

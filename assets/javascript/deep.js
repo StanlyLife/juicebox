@@ -1,4 +1,5 @@
 let oldCards = new Stack();
+
 async function StartFetch() {
   const cards = await fetchCards("./json/Juice.json", "deep").then((x) =>
     JSON.parse(x)
@@ -8,65 +9,111 @@ async function StartFetch() {
 
 async function Start() {
   const cards = await StartFetch();
+  NextCard();
 }
-Start();
 
-function RemoveTopCard() {
-  /* get card */
-  const item = JSON.parse(localStorage.getItem("deep"));
-  /* remove card */
-  const removedItem = item[0];
-  /*add removed cards to stack (LIFO) */
-  oldCards.push(removedItem);
-  oldCards.peek();
-  oldCards.printStack();
-  //   console.log(removedItem);
-  item.splice(0, 1);
-  localStorage.setItem("deep", JSON.stringify(item));
+function addToStack() {
+  const currentCard = document.querySelector(".question");
+  if (currentCard !== null) {
+    console.log(
+      `added "${oldCards.push(currentCard.firstChild.innerText)}" to stack`
+    );
+  }
+}
+
+function ShiftLocalStorage(question) {
+  let localStorageDeck = JSON.parse(window.localStorage["deep"]);
+  localStorageDeck.splice(0, 1);
+  window.localStorage.setItem("deep", JSON.stringify(localStorageDeck));
+}
+
+function AddToLocalStorage(question) {
+  let localStorageDeck = JSON.parse(window.localStorage["deep"]);
+  localStorageDeck.unshift(question);
+  window.localStorage.setItem("deep", JSON.stringify(localStorageDeck));
 }
 
 /* event listeners */
-previous.addEventListener("click", OldCard);
-next.addEventListener("click", NewCard);
+next.addEventListener("click", NextCard);
+previous.addEventListener("click", PreviousCard);
 
-function NewCard() {
-  RemoveHtmlCard();
-  CreateHtmlCard();
+function NextCard() {
+  /* add card to stack */
+  addToStack();
+  RemoveHtmlCard("next");
+  /* add card from localstorage and pop */
+  const question = JSON.parse(window.localStorage["deep"]);
+  if (question.length > 0) {
+    CreateHtmlCard(question[0], "nextIn");
+    ShiftLocalStorage(question[0]);
+  } else {
+    console.log("no more questions");
+    //TODO
+    //Create do you want to play again or back to home (card)
+  }
 }
 
-function OldCard() {
-  console.log("old card");
+function PreviousCard() {
+  const previous = oldCards.peek();
+  if (previous !== undefined) {
+    /* add card to localstorage top */
+    const currentQuestion = document.querySelector(".question").firstChild
+      .innerText;
+    AddToLocalStorage(currentQuestion);
+    RemoveHtmlCard("previous");
+
+    /* add card from stack */
+    CreateHtmlCard(previous, "previousIn");
+    /* remove card from stack */
+    oldCards.pop();
+  } else {
+    console.log("no previous cards");
+  }
 }
 
-function RemoveHtmlCard() {
-  console.log("Remove Card");
-  const activeCard = document.querySelector(".card");
-  if (activeCard !== null) {
-    activeCard.classList.remove("animateIn");
-    activeCard.addEventListener("animationend", () => {
-      main.removeChild(activeCard);
+function CreateHtmlCard(text, side) {
+  //create element
+  const card = document.createElement("div");
+  const question = document.createElement("div");
+  const questionText = document.createElement("p");
+  //add classes
+  card.classList.add("card");
+  card.classList.add(side);
+
+  question.classList.add("question");
+  //add text
+  questionText.innerText = text;
+  //append children
+  question.appendChild(questionText);
+  card.appendChild(question);
+
+  /* add eventlistener */
+  card.addEventListener("animationend", () => card.classList.remove(side));
+  //remove class after animation
+  main.appendChild(card);
+  return card;
+}
+
+function RemoveHtmlCard(side) {
+  const cardList = document.querySelectorAll(".card");
+  if (cardList.length > 0) {
+    cardList.forEach((card) => {
+      if (side === "next") {
+        card.classList.add("nextOut");
+      } else {
+        card.classList.add("previousOut");
+      }
+      card.addEventListener("animationend", () => {
+        try {
+          main.removeChild(card);
+        } catch (error) {
+          console.log(`Error on removing card: ${error}`);
+        }
+      });
     });
-    activeCard.classList.add("animateOut");
+  } else {
+    //console.log("no cards to remove");
   }
 }
 
-function CreateHtmlCard() {
-  let question = JSON.parse(localStorage.getItem("deep"))[0];
-  if (question !== undefined) {
-    console.log("create card");
-    /*wrapper*/
-    const card = document.createElement("div");
-    card.classList.add("card");
-    /*children */
-    const questionWrapper = document.createElement("div");
-    questionWrapper.classList.add("question");
-    const questionP = document.createElement("p");
-    questionP.innerText = question;
-    /* append children */
-    questionWrapper.appendChild(questionP);
-    card.appendChild(questionWrapper);
-    card.classList.add("animateIn");
-    main.appendChild(card);
-    RemoveTopCard();
-  }
-}
+Start();

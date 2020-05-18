@@ -1,8 +1,10 @@
 @media only screen and (max-width: 600px) {
+  html {
+    overflow: scroll;
+  }
+
   header {
     margin-top: 1vh;
-  }
-  main {
   }
 
   .hero {
@@ -36,7 +38,7 @@
     justify-content: center;
     align-items: center;
     z-index: 5;
-    font-size: 15vh;
+    font-size: 12.5vh;
   }
 
   #next:hover {
@@ -62,5 +64,57 @@
     padding: 0.5rem;
     display: flex;
     align-items: center;
+  }
+
+  hr {
+    height: 1vh;
+    background: linear-gradient(#ff9d0a, #ff640a);
+    border: none;
+    width: 50vw;
+
+    margin: 1vh 0;
+
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+
+    animation-name: expandHr;
+    animation-iteration-count: 1;
+    animation-duration: 1.5s;
+  }
+  .deep,
+  .most-likely,
+  .never-have-i-ever {
+    animation-name: hero, load;
+    animation-duration: 1.5s;
+  }
+
+  .hero {
+    animation-name: hero, load;
+    animation-duration: 1.75s;
+  }
+
+  @keyframes expandHr {
+    from {
+      width: 0vw;
+    }
+    to {
+      width: 50vw;
+    }
+  }
+
+  @keyframes hero {
+    from {
+      transform: translate(0, -100vh);
+    }
+    to {
+      transform: translate(0, 0vh);
+    }
+  }
+  @keyframes load {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
   }
 }

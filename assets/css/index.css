@@ -1,21 +1,29 @@
+html {
+  overflow: hidden;
+}
+
 header {
   height: 5vh;
 }
 
 main {
-  height: 95vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
 }
 
-main .hero {
-  margin: 0 5vh 12vh 5vh;
-
+.hero {
+  margin: 0;
+  margin-bottom: 10vh;
   text-align: center;
   font-family: roboto;
   font-size: 1.25rem;
+
+  animation-name: hero;
+  animation-iteration-count: 1;
+  animation-duration: 0.5s;
 }
 
 .select {
@@ -25,7 +33,6 @@ main .hero {
 }
 
 .game {
-  font-size: 1.2rem;
   font-family: lobster;
   color: #333;
   text-align: center;
@@ -45,13 +52,17 @@ main .hero {
   transition: height 1s ease-in-out;
   transition: opacity 0.5s ease-in-out;
   opacity: 0%;
+
+  min-height: 40vh;
 }
 
 .game h1 {
   flex: 2;
+  font-size: 3rem;
 }
 
 .game h6 {
+  font-size: 1.5rem;
   flex: 1;
   font-family: roboto;
   color: #555;
@@ -71,7 +82,7 @@ main .hero {
   margin: 1.5rem 0.5rem 0;
   background: transparent;
 
-  transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in;
   flex: 1;
 }
 
@@ -81,12 +92,56 @@ main .hero {
 
 .deep {
   background-color: indianred;
+  animation-name: slideRight;
+  animation-iteration-count: 1;
+  animation-duration: 1.5s;
 }
 
 .never-have-i-ever {
   background-color: #f8c832;
+  animation-name: load;
+  animation-iteration-count: 1;
+  animation-duration: 0.5s;
 }
 
 .most-likely {
   background-color: #83da65;
+  animation-name: slideLeft;
+  animation-iteration-count: 1;
+  animation-duration: 1.5s;
+}
+
+@keyframes load {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes hero {
+  from {
+    transform: translate(0, -75vh);
+  }
+  to {
+    transform: translate(0, 0px);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translate(-50vw);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+@keyframes slideLeft {
+  from {
+    transform: translate(50vw);
+  }
+  to {
+    transform: translate(0);
+  }
 }

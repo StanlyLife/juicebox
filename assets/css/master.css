@@ -34,4 +34,6 @@ header img {
 
 main {
   min-height: 93vh;
+  display: flex;
+  align-items: center;
 }

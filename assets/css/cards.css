@@ -20,3 +20,42 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.arrows {
+  border: 2px solid lawngreen;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#next,
+#previous {
+  font-size: 4rem;
+  margin: 2%;
+  color: #999;
+  transition: transform 0.25s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#previous {
+  transform: rotate(180deg);
+}
+
+#next:hover,
+#previous:hover {
+  color: #333;
+}
+
+#next:hover {
+  transform: scale(1.25);
+}
+
+#previous:hover {
+  transform: scale(1.25) rotate(180deg);
+  /* transform: rotate(180deg); */
+}

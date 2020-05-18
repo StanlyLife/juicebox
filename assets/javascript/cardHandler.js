@@ -84,7 +84,7 @@ function CreateHtmlCard(text, side) {
 
   question.classList.add("question");
   //add text
-  questionText.innerText = text;
+  questionText.innerText = `${prefix} ${String(text).toLowerCase()}`;
   //append children
   question.appendChild(questionText);
   card.appendChild(question);

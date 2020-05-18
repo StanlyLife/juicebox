@@ -1,5 +1,9 @@
+/* global variables */
+const previous = document.querySelector("#previous");
+const next = document.querySelector("#next");
+
 /* to create a deck, call GetDeck(jsonurl, category) */
-let cards = async (json, category) => {
+async function fetchCards(json, category) {
   let x;
   await fetch(json)
     .then((questions) => questions.json())
@@ -7,12 +11,11 @@ let cards = async (json, category) => {
       x = CreateDeck(q, category);
     });
   return x;
-};
+}
 /* Create and shuffle deck */
 function CreateDeck(questions, category) {
   let questionList = [];
   let i = 1;
-
   /* create array */
   for (var key in questions) {
     questionList.push(questions[key].question);
@@ -23,7 +26,7 @@ function CreateDeck(questions, category) {
   const shuffledArray = ShuffleDeck(questionList);
 
   /* add to local storage */
-  DeckToLocalStorage(shuffledArray, category);
+  return DeckToLocalStorage(shuffledArray, category);
 }
 
 /* de-facto unbiased shuffle algorithm */
@@ -48,13 +51,52 @@ function ShuffleDeck(deck) {
 /* local storage */
 function DeckToLocalStorage(deck, category) {
   const myStorage = window.localStorage;
-  let jsonDeck = { deck };
-  if (myStorage[category] === undefined || myStorage[category] === null) {
+  let jsonDeck = deck;
+  if (
+    myStorage[category] === undefined ||
+    JSON.parse(myStorage[category]).length < 1
+  ) {
     localStorage.setItem(category, JSON.stringify(jsonDeck));
     cards = jsonDeck;
   } else {
     const storageDeck = JSON.parse(localStorage.getItem(category));
-    storageDeck.deck.forEach((x) => console.log(x));
     cards = storageDeck.deck;
+  }
+  console.log(JSON.parse(myStorage[category]).length);
+  return JSON.stringify(jsonDeck);
+}
+
+class Stack {
+  constructor() {
+    this.items = [];
+  }
+
+  push(item) {
+    this.items.push(item);
+    return item;
+  }
+
+  pop() {
+    this.items.splice(this.items.indexOf(this.items.length), 1);
+  }
+
+  peek() {
+    console.log(this.items[this.items.length - 1]);
+    return this.items[this.items.length];
+  }
+
+  isEmpty() {
+    if (this.items.length < 1) {
+      return true;
+    }
+    return false;
+  }
+
+  printStack() {
+    //regular for loops are faster than for each
+    console.log(`the stack has ${this.items.length} items`);
+    for (let i = 0; i < this.items.length; i++) {
+      console.log(this.items[i]);
+    }
   }
 }

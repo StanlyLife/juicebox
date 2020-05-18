@@ -1,6 +1,7 @@
 /* global variables */
-const previous = document.querySelector("#previous");
-const next = document.querySelector("#next");
+const previous = document.getElementById("previous");
+const next = document.getElementById("next");
+const main = document.querySelector("main");
 
 /* to create a deck, call GetDeck(jsonurl, category) */
 async function fetchCards(json, category) {
@@ -65,6 +66,12 @@ function DeckToLocalStorage(deck, category) {
   console.log(JSON.parse(myStorage[category]).length);
   return JSON.stringify(jsonDeck);
 }
+/* Check if localstorage is empty */
+// function CheckLocalStorage(category) {
+//   if (window.localStorage[category] === undefined) {
+//     console.log("empty");
+//   }
+// }
 
 class Stack {
   constructor() {

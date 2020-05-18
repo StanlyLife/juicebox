@@ -13,6 +13,22 @@ html,
 body {
   overflow-x: hidden;
 }
+a,
+a::after {
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s ease-in-out;
+}
+
+a:hover {
+  opacity: 75%;
+}
+
+header h1:hover {
+  color: #333 !important;
+}
+
 header {
   /* background-color: #999; */
   height: 6vh;
@@ -27,6 +43,9 @@ header h1 {
   margin: 0.1rem;
   font-family: Lobster;
   font-size: 3.75vh;
+  color: #ff9d0a;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
+  transition: all 0.25s ease-in-out;
 }
 
 header img {
@@ -41,4 +60,37 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+hr {
+  height: 1vh;
+  background: linear-gradient(#ff9d0a, #ff640a);
+  border: none;
+  width: 25vw;
+
+  margin: 1vh 0;
+
+  box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.5);
+
+  animation-name: expandHr;
+  animation-iteration-count: 1;
+  animation-duration: 1.5s;
+}
+
+@keyframes drinker {
+  from {
+    transform: translate(-0.5vw);
+  }
+  to {
+    transform: translate(100vw);
+  }
+}
+
+@keyframes expandHr {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 25vw;
+  }
 }

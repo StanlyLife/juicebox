@@ -1,0 +1,66 @@
+@media only screen and (max-width: 600px) {
+  header {
+    margin-top: 1vh;
+  }
+  main {
+  }
+
+  .hero {
+    margin: auto;
+    margin-top: 1vh;
+    padding: 2vh;
+    width: 100vw;
+  }
+
+  .game {
+    margin: 0.5rem;
+    height: auto;
+  }
+
+  .game h6 {
+    margin: 0.25rem 0;
+    font-size: 1.25rem;
+  }
+
+  .select {
+    flex-direction: column;
+  }
+
+  #next,
+  #previous {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    font-size: 15vh;
+  }
+
+  #next:hover {
+    transform: scale(1);
+  }
+  #previous:hover {
+    transform: scale(1) rotate(180deg);
+  }
+
+  #next {
+    right: 0;
+  }
+
+  .card {
+    width: 95vw;
+    height: 50%;
+    font-size: 1.4rem;
+
+    display: flex;
+    padding: 1rem;
+  }
+  .question {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+}

@@ -4,8 +4,9 @@
 
   width: 50%;
   padding: 2rem 5rem;
-
-  margin: 25vh auto;
+  position: absolute;
+  margin: 0 auto;
+  z-index: -1;
 }
 
 .card .header {
@@ -18,7 +19,7 @@
 
 .card .question {
   font-family: sans-serif;
-  text-align: center;
+  text-align: left;
 }
 
 .arrows {
@@ -58,4 +59,37 @@
 #previous:hover {
   transform: scale(1.25) rotate(180deg);
   /* transform: rotate(180deg); */
+}
+
+.card.animateOut {
+  animation-duration: 0.75s;
+  animation-name: slideOut;
+  animation-iteration-count: 1;
+}
+
+.card.animateIn {
+  animation-duration: 0.75s;
+  animation-name: slideIn;
+  animation-iteration-count: 1;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translate(0vw);
+  }
+
+  to {
+    transform: translate(-100vw);
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translate(100vw);
+    opacity: 0%;
+  }
+
+  to {
+    transform: translate(0vw);
+    opacity: 100%;
+  }
 }

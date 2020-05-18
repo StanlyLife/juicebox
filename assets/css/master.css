@@ -9,7 +9,10 @@ font-family: 'Roboto', sans-serif;
   padding: 0;
   box-sizing: border-box;
 }
-
+html,
+body {
+  overflow-x: hidden;
+}
 header {
   /* background-color: #999; */
   height: 6vh;
@@ -36,4 +39,6 @@ main {
   min-height: 93vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

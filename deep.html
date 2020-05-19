@@ -8,33 +8,48 @@
     <link rel="stylesheet" href="assets/css/mobile.css" />
     <title>Juicebox</title>
   </head>
-  <body>
-    <header>
-      <a href="index.html">
-        <img src="assets/images/food.svg" alt="" />
-      </a>
-      <a href="index.html">
-        <h1>JuiceBox</h1>
-      </a>
-    </header>
+  <body data-barba="wrapper">
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="wrapper">
+      <header>
+        <a href="index.html">
+          <img src="assets/images/food.svg" alt="" />
+        </a>
+        <a href="index.html">
+          <h1>JuiceBox</h1>
+        </a>
+      </header>
 
-    <hr />
+      <hr />
 
-    <main>
-      <div class="arrows">
-        <span id="previous">
-          <i class="fas fa-chevron-circle-right"></i>
-        </span>
-        <span id="next">
-          <i class="fas fa-chevron-circle-right"></i>
-        </span>
-      </div>
-    </main>
-
+      <main>
+        <div class="arrows">
+          <span id="previous">
+            <i class="fas fa-chevron-circle-right"></i>
+          </span>
+          <span id="next">
+            <i class="fas fa-chevron-circle-right"></i>
+          </span>
+        </div>
+      </main>
+    </div>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <script src="assets/javascript/main.js"></script>
     <script src="assets/javascript/cardHandler.js"></script>
     <script src="assets/javascript/independent/deep.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+      integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/javascript/transitions.js"></script>
   </body>
 </html>

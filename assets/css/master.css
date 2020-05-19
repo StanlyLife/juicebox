@@ -77,15 +77,6 @@ hr {
   animation-duration: 1.5s;
 }
 
-@keyframes drinker {
-  from {
-    transform: translate(-0.5vw);
-  }
-  to {
-    transform: translate(100vw);
-  }
-}
-
 @keyframes expandHr {
   from {
     width: 0vw;
@@ -93,4 +84,16 @@ hr {
   to {
     width: 25vw;
   }
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-right: auto;
+}
+
+ul li {
+  margin-right: 2em;
+  background-color: indianred;
 }

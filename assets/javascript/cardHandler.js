@@ -11,9 +11,7 @@ async function Start() {
 function addToStack() {
   const currentCard = document.querySelector(".question");
   if (currentCard !== null) {
-    console.log(
-      `added "${oldCards.push(currentCard.firstChild.innerText)}" to stack`
-    );
+    oldCards.push(currentCard.firstChild.innerText);
   }
 }
 
@@ -43,10 +41,6 @@ function NextCard(value) {
     CreateHtmlCard(question[0], "nextIn");
     ShiftLocalStorage(question[0]);
   } else {
-    console.log("no more questions");
-    //TODO
-    //Create do you want to play again or back to home (card)
-
     restart();
   }
 }
@@ -154,7 +148,5 @@ function RemoveHtmlCard(side) {
         }
       });
     });
-  } else {
-    //console.log("no cards to remove");
   }
 }

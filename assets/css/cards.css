@@ -59,9 +59,15 @@
   transform: rotate(180deg);
 }
 
+.no-previous {
+  animation-duration: 0.2s;
+  animation-iteration-count: 3;
+  animation-name: blink-red;
+}
+
 #next:hover,
 #previous:hover {
-  color: #333;
+  color: #999;
 }
 
 #next:hover {
@@ -132,6 +138,15 @@
   to {
     transform: translate(0vw);
     opacity: 100%;
+  }
+}
+
+@keyframes blink-red {
+  from {
+    color: #999;
+  }
+  to {
+    color: indianred;
   }
 }
 

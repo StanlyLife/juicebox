@@ -68,10 +68,11 @@ function PreviousCard() {
     /* remove card from stack */
     oldCards.pop();
   } else {
-    console.log("no previous cards");
-    //TODO
-    //Make button red
-    //Popup for no previous questions logged?
+    const previous = document.getElementById("previous");
+    previous.classList.add("no-previous");
+    previous.addEventListener("animationend", () => {
+      previous.classList.remove("no-previous");
+    });
   }
 }
 
@@ -107,8 +108,6 @@ function restart() {
   card.appendChild(title);
   card.appendChild(question);
   main.appendChild(card);
-
-  /* disable next and previous */
 }
 
 function Home() {

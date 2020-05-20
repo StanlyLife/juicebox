@@ -46,6 +46,8 @@ function NextCard(value) {
     console.log("no more questions");
     //TODO
     //Create do you want to play again or back to home (card)
+
+    restart();
   }
 }
 
@@ -71,6 +73,46 @@ function PreviousCard() {
     //Make button red
     //Popup for no previous questions logged?
   }
+}
+
+function restart() {
+  const card = document.createElement("div");
+  card.classList.add("card");
+  const title = document.createElement("p");
+  title.classList.add("title");
+  title.innerText = "no more questions!😥";
+  const question = document.createElement("div");
+  question.classList.add("question");
+  const restartBtn = document.createElement("button");
+  restartBtn.classList.add("restart");
+  restartBtn.classList.add("myBtn");
+  restartBtn.innerText = "restart";
+
+  const homeBtn = document.createElement("button");
+  homeBtn.classList.add("home");
+  homeBtn.classList.add("myBtn");
+  homeBtn.innerText = "home";
+
+  homeBtn.addEventListener("click", () => {
+    console.log("click home");
+    Home();
+  });
+  restartBtn.addEventListener("click", () => {
+    console.log("click start");
+    Start();
+  });
+
+  question.appendChild(restartBtn);
+  question.appendChild(homeBtn);
+  card.appendChild(title);
+  card.appendChild(question);
+  main.appendChild(card);
+
+  /* disable next and previous */
+}
+
+function Home() {
+  window.location.href = "index.html";
 }
 
 function CreateHtmlCard(text, side) {

@@ -6,7 +6,19 @@
   padding: 2rem 5rem;
   position: absolute;
   margin: 0 auto;
-  z-index: -1;
+
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .title {
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  color: #333;
 }
 
 .card .header {
@@ -62,9 +74,6 @@
 }
 
 .card {
-  min-height: 25vh;
-  display: flex;
-  align-items: center;
   animation-duration: 0.5s;
   animation-iteration-count: 1;
 }
@@ -124,4 +133,43 @@
     transform: translate(0vw);
     opacity: 100%;
   }
+}
+
+.myBtn {
+  border: none;
+  padding: 1.5rem 4rem;
+  background-color: #555;
+  border-radius: 2rem;
+  font-size: 2.5rem;
+  color: snow;
+  font-family: "lobster";
+  margin: 0 1%;
+
+  cursor: pointer;
+
+  transition: all 0.1s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.restart:hover {
+  color: #4caf5c;
+  background-color: #333;
+}
+
+.home:hover {
+  color: #ff9d0a;
+  background-color: #333;
+}
+
+.home {
+  background-color: #ff9d0a;
+}
+
+.restart {
+  background-color: #4caf5c;
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }

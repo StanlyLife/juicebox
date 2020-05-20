@@ -87,13 +87,15 @@ hr {
 }
 
 ul {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin-right: auto;
+  display: none;
+  pointer-events: none;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: lightskyblue;
 }
 
 ul li {
-  margin-right: 2em;
+  margin: 1vw;
   background-color: indianred;
 }

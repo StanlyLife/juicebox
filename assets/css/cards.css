@@ -62,6 +62,9 @@
 }
 
 .card {
+  min-height: 25vh;
+  display: flex;
+  align-items: center;
   animation-duration: 0.5s;
   animation-iteration-count: 1;
 }
